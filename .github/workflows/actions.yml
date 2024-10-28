@@ -25,6 +25,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install fastapi uvicorn pytest
+          pip install httpx
 
       - name: Run tests
         run: pytest test_main.py
